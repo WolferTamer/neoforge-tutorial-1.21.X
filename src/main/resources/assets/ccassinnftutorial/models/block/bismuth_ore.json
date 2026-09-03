@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all":"ccassinnftutorial:block/bismuth_ore"
+  }
+}
