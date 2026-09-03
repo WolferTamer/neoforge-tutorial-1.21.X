@@ -12,6 +12,10 @@
   "block.ccassinnftutorial.magic_block": "Magic Block",
 
   "creativetab.ccassinnftutorial.bismuth_items": "Bismuth Items",
-  "creativetab.ccassinnftutorial.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.ccassinnftutorial.bismuth_blocks": "Bismuth Blocks",
 
+  "tooltip.ccassinnftutorial.magic_block.tooltip": "This Block is very §bMAGICAL§r",
+  "tooltip.ccassinnftutorial.chisel.shift_down": "This Item can chisel Blocks into Bricks",
+  "tooltip.ccassinnftutorial.chisel": "Press §eSHIFT§r for more Information",
+  "tooltip.ccassinnftutorial.radish.tooltip": "This tastes really great"
 }
