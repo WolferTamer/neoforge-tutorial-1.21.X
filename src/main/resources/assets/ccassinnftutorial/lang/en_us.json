@@ -6,6 +6,12 @@
   "item.ccassinnftutorial.frostfire_ice" : "Frostfire Ice",
   "item.ccassinnftutorial.starlight_ashes" : "Starlight Ashes",
 
+  "item.ccassinnftutorial.bismuth_sword" : "Bismuth Sword",
+  "item.ccassinnftutorial.bismuth_pickaxe" : "Bismuth Pickaxe",
+  "item.ccassinnftutorial.bismuth_shovel" : "Bismuth Shovel",
+  "item.ccassinnftutorial.bismuth_axe" : "Bismuth Axe",
+  "item.ccassinnftutorial.bismuth_hoe" : "Bismuth Hoe",
+
   "block.ccassinnftutorial.bismuth_block": "Block of Bismuth",
   "block.ccassinnftutorial.bismuth_ore": "Bismuth Ore",
   "block.ccassinnftutorial.bismuth_deepslate_ore": "Deepslate Bismuth Ore",
