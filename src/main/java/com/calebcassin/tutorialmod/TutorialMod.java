@@ -1,6 +1,7 @@
 package com.calebcassin.tutorialmod;
 
 import com.calebcassin.tutorialmod.block.ModBlocks;
+import com.calebcassin.tutorialmod.component.ModDataComponents;
 import com.calebcassin.tutorialmod.item.ModCreativeModeTabs;
 import com.calebcassin.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -40,6 +41,8 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

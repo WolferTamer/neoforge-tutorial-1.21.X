@@ -1,6 +1,7 @@
 package com.calebcassin.tutorialmod.item.custom;
 
 import com.calebcassin.tutorialmod.block.ModBlocks;
+import com.calebcassin.tutorialmod.component.ModDataComponents;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -48,6 +49,8 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
             return InteractionResult.SUCCESS;
         }
@@ -61,6 +64,10 @@ public class ChiselItem extends Item {
             tooltipComponents.add(Component.translatable("tooltip.ccassinnftutorial.chisel.shift_down"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.ccassinnftutorial.chisel"));
+        }
+
+        if(stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last Block Changed At " + stack.get(ModDataComponents.COORDINATES)));
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
